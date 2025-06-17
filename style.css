@@ -26,13 +26,14 @@
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(0, 0%, 81%);
   --light-blue: hsl(210, 46%, 95%);
+  --barlow: "Barlow Semi Condensed";
 }
 
 
 body {
   background-color: var(--light-blue);
   font-size: 13px;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: var(--barlow), sans-serif;
 }
 
 main {
@@ -52,9 +53,21 @@ main {
 
 img {
   border-radius: 50%;
-  border: solid 5px rgba(255, 255, 255, 0.507);
+  border: solid 3px rgba(255, 255, 255, 0.507);
   width: 35px;
   height: 35px;
+}
+
+#quotation {
+    border-radius: 0%;
+    border: 0px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -200px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    z-index: -1;
 }
 
 .name {
@@ -80,11 +93,10 @@ img {
   font-size: 1.1em;
 }
 
-/*------------*/
-
 #testimony1 {
   color: var(--white);
   background-color: var(--purple);
+  z-index: 1;
 }
 
 #testimony2, #testimony4 {
@@ -94,10 +106,8 @@ img {
 #testimony3, #testimony5 {
   color: var(--dark-blue);
   background-color: var(--white);
-  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.5);
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.336);
 }
-
-/*Backgrounds*/
 
 #testimony2 {
   background-color: var(--medium-blue);
